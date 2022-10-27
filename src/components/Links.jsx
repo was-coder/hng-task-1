@@ -48,6 +48,23 @@ function Links() {
             {data.content}
           </a>
         ))}
+
+        <div className="links-img">
+          <a
+            href="https://app.slack.com/client/T042F7V19Q8/D048242G0CW"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/assets/slack.png" alt="slack logo" />
+          </a>
+          <a
+            href="https://github.com/was-coder"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/assets/github.png" alt="github logo" />
+          </a>
+        </div>
       </section>
     </Fragment>
   );

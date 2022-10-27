@@ -1,15 +1,32 @@
 .link-section {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   text-align: center;
 }
 
 .btn {
   background-color: #eaecf0;
-  padding: 15px;
+  padding: 20px;
   text-decoration: none;
-  color: #000000;
+  color: #101828;
   font-weight: 700;
   cursor: pointer;
+  border-radius: 10px;
+}
+
+.links-img {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.links-img a {
+  margin: 0 20px;
+}
+
+@media screen and (min-width: 960px) {
+  .btn {
+    font-size: 18px;
+  }
 }

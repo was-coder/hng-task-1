@@ -8,10 +8,16 @@
 
 body {
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px 0;
   position: relative;
   font-family: "Inter", sans-serif;
   font-size: 16px;
+}
+
+@media screen and (min-width: 960px) {
+  body {
+    width: 75%;
+  }
 }
