@@ -1,0 +1,28 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.footer-img {
+  width: 50%;
+  height: 50%;
+}
+
+#task-paragraph {
+  color: #667085;
+  padding: 10px 0;
+}
+
+@media screen and (min-width: 960px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-img {
+    width: 20%;
+    height: 20%;
+  }
+}

@@ -16,8 +16,8 @@
 
 .icon-div {
   position: absolute;
-  right: 30%;
-  top: 30%;
+  right: 20%;
+  top: 25%;
   border: 2px solid #d0d5dd;
   border-radius: 50%;
   padding: 5px;
@@ -45,5 +45,9 @@
 
   #desktop-share {
     display: block;
+  }
+
+  .icon-div {
+    right: 30%;
   }
 }
