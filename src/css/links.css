@@ -1,0 +1,15 @@
+.link-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.btn {
+  background-color: #eaecf0;
+  padding: 15px;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+  cursor: pointer;
+}
