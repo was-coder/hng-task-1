@@ -13,16 +13,25 @@ function Profile() {
 
   return (
     <Fragment>
-      <section className="profile-section">
+      <header className="profile-header">
         <img src="asset/wasiu.jfif" alt="Wasiu's Profile" id="profile__img" />
         <h1 id="twitter" onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
           DevWaslead
         </h1>
         <span id="slack">{username ? "Waslead" : null}</span>
-        <div className="icon-div">
-          <img src="asset/share.png" alt="share icon" id="share" />
+
+        <div className="icon-div" id="mobile-share">
+          <img
+            src="asset/mobile-share.png"
+            alt="share icon"
+            className="share"
+          />
         </div>
-      </section>
+
+        <div className="icon-div" id="desktop-share">
+          <img src="asset/desktop-share.png" alt="desktop-share icon" />
+        </div>
+      </header>
     </Fragment>
   );
 }
