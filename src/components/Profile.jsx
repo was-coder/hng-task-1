@@ -1,16 +1,6 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment } from "react";
 
 function Profile() {
-  const [username, setUsername] = useState(false);
-
-  const handleEnter = () => {
-    setUsername(true);
-  };
-
-  const handleLeave = () => {
-    setUsername(false);
-  };
-
   return (
     <Fragment>
       <header className="profile-header">
@@ -22,10 +12,6 @@ function Profile() {
           />
           <img src="/assets/camera.png" alt="Hover camera" id="camera__img" />
         </div>
-        <h1 id="twitter" onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
-          DevWaslead
-        </h1>
-        <span id="slack">{username ? "Waslead" : null}</span>
 
         <div className="icon-div" id="mobile-share">
           <img

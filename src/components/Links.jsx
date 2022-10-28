@@ -3,6 +3,11 @@ import React, { Fragment } from "react";
 function Links() {
   const data = [
     {
+      id: "slack",
+      content: "Waslead",
+      link: "https://app.slack.com/client/T042F7V19Q8/D048242G0CW",
+    },
+    {
       id: "btn__twitter",
       content: "Twitter Link",
       link: "https://twitter.com/DevWaslead/",
@@ -43,6 +48,7 @@ function Links() {
             target="_blank"
             rel="noopener noreferrer"
             key={data.id}
+            id={data.id}
             href={data.link}
           >
             {data.content}
