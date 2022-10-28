@@ -20,6 +20,15 @@
   color: #101828;
 }
 
+.btn:focus {
+  border: 1px solid #98a2b3;
+}
+
+.btn:disabled {
+  background-color: #f2f4f7;
+  border: 1px solid #f2f4f7;
+}
+
 .links-img {
   display: flex;
   justify-content: center;

@@ -14,7 +14,14 @@ function Profile() {
   return (
     <Fragment>
       <header className="profile-header">
-        <img src="/assets/wasiu.jfif" alt="Wasiu's Profile" id="profile__img" />
+        <div className="profile-img-div">
+          <img
+            src="/assets/wasiu.jfif"
+            alt="Wasiu's Profile"
+            id="profile__img"
+          />
+          <img src="/assets/camera.png" alt="Hover camera" id="camera__img" />
+        </div>
         <h1 id="twitter" onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
           DevWaslead
         </h1>
@@ -34,6 +41,7 @@ function Profile() {
             alt="desktop-share icon"
             className="share"
           />
+          <div className="share-link">Share Link</div>
         </div>
       </header>
     </Fragment>
