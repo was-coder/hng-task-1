@@ -1,11 +1,11 @@
 import React, { Fragment } from "react";
-import { Profile, Footer, Links } from "./imports/Imports";
+import { Footer } from "./imports/Imports";
+import GetRoutes from "./routes/GetRoutes";
 
 function App() {
   return (
     <Fragment>
-      <Profile />
-      <Links />
+      <GetRoutes />
       <Footer />
     </Fragment>
   );
