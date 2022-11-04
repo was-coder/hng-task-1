@@ -63,12 +63,7 @@ function Contact() {
       <div className="contact-container">
         <h1>Contact Me</h1>
         <p>Hi there, contact me to ask me about anything you have in mind.</p>
-        <form
-          action="https://formspree.io/f/xeqvdwpz"
-          method="POST"
-          id="form"
-          onSubmit={handleSubmit}
-        >
+        <form id="form" onSubmit={handleSubmit}>
           <div className="names-container">
             <div className="form-container names">
               <label htmlFor="first_name" className="form-label">
@@ -141,6 +136,7 @@ function Contact() {
               value="agree"
               id="agree-input"
               onChange={handleChange}
+              required
             />
             <label htmlFor="agree" id="agree">
               You agree to providing your data to {my_name} who may contact you.
