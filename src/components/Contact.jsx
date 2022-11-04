@@ -54,7 +54,7 @@ function Contact() {
 
   useEffect(() => {
     if (Object.keys(error).length === 0 && isSubmit) {
-      console.log(error);
+      // console.log(error);
     }
   });
 

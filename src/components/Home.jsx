@@ -76,14 +76,7 @@ function Links() {
 
       <section className="link-section">
         {data.map((data) => (
-          <a
-            className="btn"
-            target="_blank"
-            rel="noopener noreferrer"
-            key={data.id}
-            id={data.id}
-            href={data.link}
-          >
+          <a className="btn" key={data.id} id={data.id} href={data.link}>
             {data.content}
           </a>
         ))}
