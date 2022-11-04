@@ -50,9 +50,14 @@ textarea:focus {
   font-size: 14px;
 }
 
+.form-input .error,
+textarea .error {
+  border: 1px solid #f89687;
+}
+
 .error {
-  visibility: hidden;
-  padding: 5px 0;
+  padding: 10px 0;
+  color: #f83f23;
 }
 
 #btn__submit {
