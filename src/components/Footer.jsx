@@ -3,6 +3,7 @@ import React, { Fragment } from "react";
 function Footer() {
   return (
     <Fragment>
+      <hr />
       <footer className="footer-container">
         <img
           src="/assets/internship.png"

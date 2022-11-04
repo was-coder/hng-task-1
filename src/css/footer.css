@@ -1,7 +1,7 @@
 .footer-container {
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 .footer-img {
@@ -12,6 +12,10 @@
 #task-paragraph {
   color: #667085;
   padding: 10px 0;
+}
+
+hr {
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 960px) {

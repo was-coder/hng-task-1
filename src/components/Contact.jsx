@@ -6,35 +6,35 @@ function Contact() {
   return (
     <>
       <div className="contact-container">
-        <h1 className="contact-header">Contact Me</h1>
-        <p className="contact-text">
-          Hi there, contact me to ask me about anything you have in mind.
-        </p>
+        <h1>Contact Me</h1>
+        <p>Hi there, contact me to ask me about anything you have in mind.</p>
         <form id="form">
-          <div className="form-container">
-            <label htmlFor="first_name" className="form-label">
-              First name
-            </label>
-            <input
-              type="text"
-              id="first_name"
-              placeholder="Enter your first name"
-              className="form-input"
-            />
-            <small className="error">Error Message</small>
-          </div>
+          <div className="names-container">
+            <div className="form-container names">
+              <label htmlFor="first_name" className="form-label">
+                First name
+              </label>
+              <input
+                type="text"
+                id="first_name"
+                placeholder="Enter your first name"
+                className="form-input"
+              />
+              <small className="error">Error Message</small>
+            </div>
 
-          <div className="form-container">
-            <label htmlFor="last_name" className="form-label">
-              Last name
-            </label>
-            <input
-              type="text"
-              id="last_name"
-              placeholder="Enter your last name"
-              className="form-input"
-            />
-            <small className="error">Error Message</small>
+            <div className="form-container names">
+              <label htmlFor="last_name" className="form-label">
+                Last name
+              </label>
+              <input
+                type="text"
+                id="last_name"
+                placeholder="Enter your last name"
+                className="form-input"
+              />
+              <small className="error">Error Message</small>
+            </div>
           </div>
 
           <div className="form-container">
@@ -56,16 +56,20 @@ function Contact() {
             </label>
             <textarea
               rows="10"
-              cols="70"
               id="message"
               placeholder="Send me a message and I'll reply you as soon as possible..."
             ></textarea>
             <small className="error">Error Message</small>
           </div>
 
-          <div className="form-container">
-            <input type="checkbox" id="agree" name="agree" value="agree" />
-            <label htmlFor="agree">
+          <div className="checkbox-container">
+            <input
+              type="checkbox"
+              name="agree"
+              value="agree"
+              id="agree-input"
+            />
+            <label htmlFor="agree" id="agree">
               You agree to providing your data to {name} who may contact you.
             </label>
           </div>
