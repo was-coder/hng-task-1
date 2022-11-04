@@ -26,7 +26,14 @@
 textarea {
   padding: 10px;
   border-radius: 5px;
-  font-weight: 600;
+  font-size: 15px;
+  border: 1px solid #d0d5dd;
+}
+
+.form-input:focus,
+textarea:focus {
+  border: 2px solid #84caff;
+  color: #101828;
 }
 
 .checkbox-container {
@@ -58,6 +65,36 @@ textarea {
   border: 2px solid #1570ef;
   color: #fff;
   cursor: pointer;
+}
+
+#agree-input:checked {
+  border: 1px solid #1570ef;
+  color: #1570ef;
+  background: none;
+}
+
+#agree-input:focus {
+  border: 1px solid #84caff;
+}
+
+#agree-input:disabled {
+  border: 1px solid #d0d5dd;
+}
+
+#btn__submit:hover {
+  background-color: #175cd3;
+  border: 2px solid #175cd3;
+}
+
+#btn__submit:focus {
+  background-color: #1570ef;
+  border: 2px solid #1570ef;
+}
+
+#btn__submit:disabled {
+  background-color: #b2ddff;
+  border: 2px solid #b2ddff;
+  cursor: no-drop;
 }
 
 @media screen and (min-width: 960px) {

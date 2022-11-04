@@ -46,6 +46,7 @@ function Contact() {
               id="email"
               placeholder="yourname@email.com"
               className="form-input"
+              required
             />
             <small className="error">Error Message</small>
           </div>
