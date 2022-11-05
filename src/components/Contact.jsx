@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 function Contact() {
   const my_name = "Wasiu Adelakun";
@@ -10,7 +10,6 @@ function Contact() {
   };
   const [formValue, setFormValue] = useState(initialValue);
   const [error, setErrors] = useState({});
-  const [isSubmit, setIsSubmit] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,7 +19,6 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setErrors(validate(formValue));
-    setIsSubmit(true);
   };
 
   const validate = (values) => {
@@ -51,12 +49,6 @@ function Contact() {
 
     return errors;
   };
-
-  useEffect(() => {
-    if (Object.keys(error).length === 0 && isSubmit) {
-      // console.log(error);
-    }
-  });
 
   return (
     <>
